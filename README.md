@@ -37,6 +37,7 @@ We aim to release the following items this month.
 
 - [Setup](https://github.com/NVIDIA/DreamDojo/blob/main/docs/SETUP.md)
 - [Hermes Quickstart (portable launch/eval scripts)](docs/HERMES_QUICKSTART.md)
+- [Lambda GPU runbook (cloud bootstrap + first command pack)](docs/LAMBDA_CLOUD_RUNBOOK.md)
 - [Latent Action Model Training](https://github.com/NVIDIA/DreamDojo/blob/main/docs/LAM.md)
 - [DreamDojo Pretraining](https://github.com/NVIDIA/DreamDojo/blob/main/docs/PRETRAIN.md)
 - [DreamDojo Post-Training](https://github.com/NVIDIA/DreamDojo/blob/main/docs/POSTTRAIN.md)
