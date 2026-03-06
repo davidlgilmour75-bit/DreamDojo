@@ -10,6 +10,26 @@ Recommended starter shape for first run:
 
 Attach a persistent filesystem in the same region so checkpoints/data survive restarts.
 
+## 0.5) One-command launch + SSH (from your local machine)
+
+From your local DreamDojo clone:
+
+```bash
+cd ~/projects/DreamDojo
+export LAMBDA_API_KEY=<your_lambda_api_key>
+export SSH_KEY_NAME=<your_lambda_ssh_key_name>
+export REGION_NAME=us-west-1
+export INSTANCE_TYPE=gpu_1x_h100_pcie
+export FILE_SYSTEM_NAME=<optional_lambda_filesystem_name>
+
+# AUTO_BOOTSTRAP=1 will clone/update DreamDojo on the instance and run bootstrap script
+OPEN_SSH=1 AUTO_BOOTSTRAP=1 bash cloud/lambda/launch_and_ssh.sh
+```
+
+Notes:
+- The script writes the launched instance ID to `.lambda-last-instance-id`.
+- Set `OPEN_SSH=0` if you only want launch details without opening a shell.
+
 ## 1) SSH in
 
 ```bash
